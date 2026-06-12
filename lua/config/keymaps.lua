@@ -55,5 +55,6 @@ map("n", "<leader>dr", "<cmd>lua require'dap'.run_last()<CR>", { desc = "Debugge
 -- map("t", "<leader>w", "<C-\\><C-n><C-w><C-w>")
 -- map("n", "<leader>tv", "<C-w><C-v><cmd>term<cr>i")
 
-map({ "i", "v" }, "<M-Up>", "<Esc><Cmd>m .-2<CR>==gi")
-map({ "i", "v" }, "<M-Down>", "<Esc><Cmd>m .+1<CR>==gi")
+map({"n", "i"}, "<M-Up>", "<M-k>", {remap = true})
+map({"n", "i"}, "<M-Down>", "<M-j>", {remap = true})
+
